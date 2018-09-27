@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b232b;
+    overflow: auto;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url('img/background.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding-top: 4%;
+}
+
+.container-main {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-caption {
+    border-radius: 10px;
+    border-color: #2d404d;
+    border-style: solid;
+    border-width: 0.5px;
+    background: rgba(255, 255, 255, 0.02);
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.caption {
+    font-size: 1.5em;   
+}
+
+.btn-custom {
+    background-color: #1b232b;
+    border-color: #92e8fe;
+    font-size: 12px;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+    background-color: #1b232b;
+    border-color: #92e8fe;
+    box-shadow: none;
+}
+.dropdown-item:focus, 
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+.container-content {
+    margin-top: 5%;
+}
+
+.card-ethereum {
+    background-image: url('img/ethereum.png');
+}
+
+.card-litecoin {
+    background-image: url('img/litecoin.png');
+}
+
+.card-bitcoin {
+    background-image: url('img/bitcoin.png');
+}
+
+.background-card {
+    /*height: 60%;*/
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+
+.caption-currency {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.info-currency {
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+.intermediate {
+    height: 25%;
+}
+
+@-moz-document url-prefix() {
+    .background-card {
+       height: 170%;    
+    }
+    .mazila-card {
+        margin-bottom: 27%;
+    }
+    .intermediate {
+        height: 40%;
+    }    
+    @media (max-width: 768px) {
+        .mazila-card {
+            margin-bottom: 40%;
+        }
+    }
+    @media (max-width: 540px) {
+        .mazila-card {
+            margin-bottom: 55%;
+        }
+    }
+}

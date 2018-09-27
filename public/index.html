@@ -1,0 +1,126 @@
+
+<html>
+    <head>
+        <title>Форгрант</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container container-main">
+                    <div class="col-12">
+                        <div class="row align-items-center container-caption">
+                            <div class="col-sm-8 offset-sm-2 offset-md-0 text-center caption text-white">
+                                Select currency to exhange:                            
+                            </div>
+                            <div class="col-md-4 offset-md-0 col-sm-8 offset-sm-2 text-center dropdown open">
+                                <button class="btn-block btn btn-secondary btn-custom" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="col-10" id="selectItem">USD</span><span class="col dropdown-toggle"></span>
+                                </button>
+                                <div class="dropdown-menu btn-custom" aria-labelledby="dropdownMenuButton" 
+                                     id="dropdownMenu">
+                                    <a class="dropdown-item text-white" data-currency="USD">USD</a>
+                                    <a class="dropdown-item text-white" data-currency="EUR">EUR</a>
+                                    <a class="dropdown-item text-white" data-currency="RUB">RUB</a>
+                                    <a class="dropdown-item text-white" data-currency="GBP">GBP</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="row container-content">
+                    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 mazila-card">
+                        <div class="card-ethereum background-card">
+                            <div class="container">
+                                <div class="col-12 text-center text-white caption-currency"><p>Ethereum</p></div>
+                                <div class="intermediate"></div>
+                                <div class="info-currency">
+                                    <div class="row caption-currency"><span class="col-3 text-white">Price:</span><span class="col-9 text-right text-white">$22 526.92</span></div>
+                                    <div class="row">
+                                        <span class="col-8 text-white">Percent change</span>
+                                        <span class="switch col-4 text-right">
+                                          <input type="checkbox" class="switch" id="switch-id">
+                                        </span>
+                                    </div> 
+                                    <div class="row"><span class="col-8 text-muted">Hour change</span><span class="col-4 text-right text-success">+266%</span></div>
+                                    <div class="row"><span class="col-8 text-muted">Day change</span><span class="col-4 text-right text-success">+266%</span></div>
+                                    <div class="row"><span class="col-8 text-muted">Week change</span><span class="col-4 text-right text-success">+266%</span></div>
+                                    <div class="row"><span class="col-8 text-muted">Month change</span><span class="col-4 text-right text-success">+266%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 mazila-card">
+                        <div class="card-litecoin background-card">
+                            <div class="container">
+                                <div class="col-12 text-center text-white caption-currency"><p>Litecoin</p></div>
+                                <div class="intermediate"></div>
+                                <div class="info-currency">
+                                    <div class="row caption-currency">
+                                        <span class="col-3 text-white">Price:</span>
+                                        <span class="col-9 text-right text-white">$22 526.92</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="col-8 text-white">Percent change</span>
+                                        <span class="switch col-4 text-right">
+                                          <input type="checkbox" class="switch" id="switch-id">
+                                        </span>
+                                    </div> 
+                                    <div class="row"><span class="col-8 text-muted">Hour change</span><span class="col-4 text-right text-success">+266%</span></div>
+                                    <div class="row"><span class="col-8 text-muted">Day change</span><span class="col-4 text-right text-success">+266%</span></div>
+                                    <div class="row"><span class="col-8 text-muted">Week change</span><span class="col-4 text-right text-success">+266%</span></div>
+                                    <div class="row"><span class="col-8 text-muted">Month change</span><span class="col-4 text-right text-success">+266%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 mazila-card">
+                        <div class="card-bitcoin background-card card-crypto" data-card="BTC" id="card-BTC">
+                            <div class="container">
+                                <div class="col-12 text-center text-white caption-currency"><p>Bitcoin</p></div>
+                                <div class="intermediate"></div>
+                                <div class="info-currency">
+                                    <div class="row caption-currency value-price">
+                                        <span class="col-3 text-white">Price:</span>
+                                        <span class="col-9 text-right text-white text-value"></span>
+                                    </div>
+                                    <div class="row switch-units">
+                                        <span class="col-8 text-white">Percent change</span>
+                                        <span class="switch col-4 text-right">
+                                          <input type="checkbox" class="switch" name="units" >
+                                        </span>
+                                    </div> 
+                                    <div class="row value-hour">
+                                        <span class="col-8 text-muted">Hour change</span>
+                                        <span class="col-4 text-right text-success text-value"></span>
+                                    </div>
+                                    <div class="row value-day">
+                                        <span class="col-8 text-muted">Day change</span>
+                                        <span class="col-4 text-right text-success text-value"></span>
+                                    </div>
+                                    <div class="row value-week"><span class="col-8 text-muted">Week change</span>
+                                        <span class="col-4 text-right text-success text-value"></span>
+                                    </div>
+                                    <div class="row value-month">
+                                        <span class="col-8 text-muted">Month change</span>
+                                        <span class="col-4 text-right text-success text-value"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        
+    </body>
+</html>
